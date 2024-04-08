@@ -76,11 +76,12 @@ WSGI_APPLICATION = 'Bikezone.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'B-zone',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'your_db_name',
         'USER':'postgres',
-        'PASSWORD':'Masthan@2021',
+        'PASSWORD': 'your_db_password',
         'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 
