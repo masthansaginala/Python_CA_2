@@ -10,4 +10,5 @@ class Team(models.Model):
     phone_number = models.CharField(max_length = 15)
 
     def __str__(self):
-        return self.first_name
+        Name = self.first_name + ' ' + self.last_name
+        return Name.capitalize()
