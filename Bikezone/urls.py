@@ -19,14 +19,15 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from screens import views
+from bikes import views
 from rest_framework import routers
 
-# router = routers.SimpleRouter()
-# router.register(r'teams', views.TeamView,'team')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('screens.urls')),
+    path('',include('bikes.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) 
