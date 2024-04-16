@@ -20,13 +20,13 @@ class BikeDetail(APIView):
         return Response(serializer.data)
     
 
-#This Api is for Listing Featured and Non Feautured Bike Lists.
-class FeauturedList(APIView):
-    def get(self, request):
-        category = request.GET.get('is_feautured')
-        data = Bikes.objects.filter(is_feautured = category)
-        serializer = BikeSerializer(data, many = True)
-        return Response(serializer.data)
+# #This Api is for Listing Featured and Non Feautured Bike Lists.
+# class FeauturedList(APIView):
+#     def get(self, request):
+#         category = request.GET.get('is_feautured')
+#         data = Bikes.objects.filter(is_feautured = category)
+#         serializer = BikeSerializer(data, many = True)
+#         return Response(serializer.data)
     
 
 
