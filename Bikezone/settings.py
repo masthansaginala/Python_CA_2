@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'screens.apps.ScreensConfig',
     'bikes.apps.BikesConfig',
     'contact.apps.ContactConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
