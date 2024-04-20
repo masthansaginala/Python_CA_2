@@ -1,0 +1,1 @@
+export const BIKE_IMAGE = "https://www.motorbeam.com/wp-content/uploads/Bajaj-Pulsar-N250.jpg"
