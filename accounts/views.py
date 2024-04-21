@@ -13,9 +13,12 @@ class UserRegisterAPIView(APIView):
         if serializer.is_valid():
             try:
                 serializer.save()
+                serializer_data = serializer.data
+                user_id = serializer.instance.id
+                serializer_data['user_id'] = user_id
             except NameyError as e:
                 raise ValidationError("OOPS")
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer_data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class UserLoginAPIView(APIView):
@@ -27,9 +30,12 @@ class UserLoginAPIView(APIView):
             username = serializer.validated_data['username']
             password = serializer.validated_data['password']
             user = authenticate(username=username, password=password)
+            user_id = user.id
             response = {
+                "email":user.email,
                 "message":"Login Sucessful",
                 "username":username,
+                "user_id" : user_id,
             }
             if user:
                 return Response(response, status=status.HTTP_200_OK)
