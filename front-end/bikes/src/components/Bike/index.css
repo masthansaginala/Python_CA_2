@@ -60,3 +60,21 @@
     color: white;
     cursor: pointer;
 }
+
+.bike-card-container{
+    width: 350px;
+    height: 400px;
+    color: #a6adba;
+    background-color: #2f3945;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.bike-card-heading{
+    text-align: center;
+}
+
+.bike-card-image{
+    width: 350px;
+    height: 200px;
+}
