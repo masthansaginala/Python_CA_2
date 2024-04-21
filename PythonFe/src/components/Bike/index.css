@@ -1,0 +1,419 @@
+.bike-bg-img{
+    /* object-fit: fill; */
+    width: 99vw;
+    height: 99vh;
+}
+
+.get-started{
+    border-radius: 5px;
+    background-color: rgb(80, 190, 80);
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.view-profile{
+    padding: 5px;
+}
+
+.view-profile:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.login-main-container{
+    width: 20%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem/* 144px */;
+    margin-bottom: 9rem/* 144px */;
+    padding: 48px;
+    border-radius: 5px;
+    text-align: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.8;
+}
+
+.login-heading{
+    text-align: center;
+    color: white;
+}
+
+.login-input-fields{
+    width: 250px !important;
+    margin-left: 40px;
+    padding: 12px !important;
+}
+
+.email-field{
+    margin-bottom: 18px;
+    /* --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important; */
+}
+
+.password-field{
+    margin-bottom: 18px;
+    /* --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important; */
+}
+
+.login-button{
+    border-radius: 5px;
+    width: 85px !important;
+    background-color: purple;
+    color: white;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.do-not-have-account{
+    color: white;
+    cursor: pointer;
+}
+
+.bike-list-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1d232a;
+    height: 100%;
+}
+
+.bikelist-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.router-div{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #a6adba;
+    padding: var(--navbar-padding, .5rem);
+    min-height: 4rem;
+    width: 99%;
+    border: 0 solid #e5e7eb;
+}
+
+.bg-base-100 {
+    --tw-bg-opacity: 1;
+    background-color: #1d232a;
+}
+
+.profile-container{
+    display: flex;
+}
+
+.profile-letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.profile-div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-details-container{
+    color: #a6adba;
+    --tw-bg-opacity: 1;
+    background-color: #1d232a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bike-card-container{
+    width: 350px;
+    height: 400px;
+    color: #a6adba;
+    background-color: #2f3945;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.user-details{
+    height: 200px;
+    width: 310px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 15px;
+    background-color: #2f3945;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.bike-details-container{
+    color: #a6adba;
+    width: 100%;
+    height: 100%;
+    background-color: #1d232a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-img{
+    cursor: pointer;
+}
+
+.bike-details{
+    height: 600px;
+    width: 800px;
+    background-color: white;
+    border-radius: 15px;
+    background-color: #2f3945;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bike-name-heading{
+    text-align: center;
+}
+
+.user-name-heading{
+    text-align: center;
+}
+
+.other-user-details{
+    padding: 6px 80px;
+}
+
+.user-profile-letter{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    align-self: center;
+    margin: 35px;
+}
+
+.user-empty-img{
+    width: 100px;
+    height: 100px;
+}
+
+.bike-card-image{
+    width: 350px;
+    height: 200px;
+}
+
+.bike-card-heading{
+    text-align: center;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: fixed;
+    top: 20vh;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 30rem;
+        height: 20rem;
+        left: calc(50% - 20rem);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.enquiry-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enquiry-heading{
+    text-align: center;
+}
+
+.enquiry-field{
+    padding: 12px;
+    width: 250px !important;
+    padding: 15px !important;
+    margin-bottom: 15px;
+}
+
+.enquiry-submit{
+    padding: 15px 20px;
+    margin-left: 15px;
+}
+
+.model-button-container{
+    display: flex;
+}
+
+.options-div{
+    position: absolute;
+    margin-top: 40px;
+    width: 120px;
+    height: 90px;
+    background-color: #2f3945;
+    border-radius: 5px;
+}
+
+.error-msg{
+    --tw-text-opacity: 1;
+    color: rgb(249 115 22 / var(--tw-text-opacity));
+    font-size: 0.85rem;
+    line-height: 1rem;
+    padding-top: 0.5rem;
+}
+
+.profile-pic-name{
+    display: flex;
+}
+
+.user-name{
+    margin-right: 13px;
+    margin-top: 4px;
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bike-detail-img-container{
+    display: flex;
+}
+
+.bike-detail-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.bike-details-attributes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bike-attribute{
+    padding: 10px 12px;
+}
+
+.bike-detail-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enquiry-btn{
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+}
+
+.search-field{
+    padding: 12px;
+    width: 280px;
+    margin-left: 40%;
+}
+
+.search-btn{
+    padding: 12px;
+}
+
+.enquiry-container{
+    display: flex;
+    flex-direction: column;
+    --tw-bg-opacity: 1;
+    background-color: #1d232a;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquiry-card-container{
+    width: 500px;
+    height: 100px;
+    background-color: #2f3945;
+    color: #a6adba;
+    padding: 0px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
