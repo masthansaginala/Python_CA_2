@@ -29,6 +29,11 @@ class FeauturedList(APIView):
         return Response(serializer.data)
     
 
-
+class BikeSearch(APIView):
+    def get(self, request):
+        search_param = request.query_params.get('search', '')
+        bikes = Bikes.objects.filter(bike_name__icontains=search_param)
+        serializer = BikeSerializer(bikes, many=True)
+        return Response(serializer.data)
 
 
