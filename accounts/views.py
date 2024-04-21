@@ -30,14 +30,14 @@ class UserLoginAPIView(APIView):
             username = serializer.validated_data['username']
             password = serializer.validated_data['password']
             user = authenticate(username=username, password=password)
-            user_id = user.id
-            response = {
-                "email":user.email,
-                "message":"Login Sucessful",
-                "username":username,
-                "user_id" : user_id,
-            }
             if user:
+                user_id = user.id
+                response = {
+                    "email":user.email,
+                    "message":"Login Sucessful",
+                    "username":username,
+                    "user_id" : user_id,
+                }
                 return Response(response, status=status.HTTP_200_OK)
             else:
                 return Response("Invalid username or password", status=status.HTTP_401_UNAUTHORIZED)
