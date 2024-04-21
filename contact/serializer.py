@@ -4,4 +4,4 @@ from rest_framework import serializers
 class InquirySerializer(serializers.ModelSerializer):
     class Meta:
         model = Inquiry
-        fields='_all_'
+        fields='__all__'
