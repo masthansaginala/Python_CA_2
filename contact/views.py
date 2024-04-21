@@ -14,3 +14,9 @@ class CreateInquiry(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors)
+class GetUserInquiries(APIView):
+    def get(self, request):
+        param_from_front_end = request.query_params.get('id')
+        inquiries = Inquiry.objects.filter(user_id=param_from_front_end)
+        serializer = InquirySerializer(inquiries, many=True)
+        return Response(serializer.data)
