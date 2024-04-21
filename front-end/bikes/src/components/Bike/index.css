@@ -78,3 +78,21 @@
     width: 350px;
     height: 200px;
 }
+
+.bike-list-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1d232a;
+    height: 100%;
+}
+
+.bikelist-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
