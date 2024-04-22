@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const TeamCard = ({id, designation, email, phoneNumber}) => {
+const TeamCard = ({id, first_name,designation, email, phoneNumber}) => {
     console.log("id",id);
   return (
     <Link style={{ textDecoration: 'none', color: '#a6adba' }} className='user-details' to={`/team/${id}`}>
@@ -13,6 +13,7 @@ const TeamCard = ({id, designation, email, phoneNumber}) => {
         <span className='other-user-details'><b>Email :</b>  ganesh123@gmail.com</span>
         <span className='other-user-details'><b>Phone No. :</b>  6303620942</span> */}
         {/* <h3 className='user-name-heading'>{userDetails.first_name + userDetails.last_name}</h3> */}
+        {first_name && <span className='other-user-details'><b>Name :</b>  {first_name}</span>}
         {designation && <span className='other-user-details'><b>Designation :</b>  {designation}</span>}
         {email && <span className='other-user-details'><b>Email :</b>  {email}</span>}
         {phoneNumber && <span className='other-user-details'><b>Phone No. :</b>  {phoneNumber}</span>}

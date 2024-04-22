@@ -63,6 +63,7 @@ const BikeDetails = () => {
                     <span className='bike-attribute'><b>No of owners:</b>No of owners</span>
                     <span className='bike-attribute'><b>Colour:</b>Colour</span>
                     <span className='bike-attribute'><b>Seating capacity:</b>Seating capacity</span> */}
+                    <button className='enquiry-btn' onClick={handleEnquiry}>Enquiry</button>
                 </div>
                 <div className='bike-detail-img-container'>
                     <img className='bike-detail-img' alt='bike-img-1' src={bikeDetails.bike_image_1} />
@@ -72,7 +73,6 @@ const BikeDetails = () => {
                     <img className='bike-detail-img' alt='bike-img-2' src={BIKE_IMAGE} />
                     <img className='bike-detail-img' alt='bike-img-3' src={BIKE_IMAGE} /> */}
                 </div>
-                <button className='enquiry-btn' onClick={handleEnquiry}>Enquiry</button>
             </div>}
             <ToastContainer />
         </div>
