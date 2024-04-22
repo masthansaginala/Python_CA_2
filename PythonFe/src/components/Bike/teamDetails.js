@@ -41,6 +41,7 @@ const TeamDetails = () => {
             <TeamCard
               key={team.id}
               id={team.id}
+              first_name={team.first_name}
               designation={team.designation}
               email={team.email}
               phoneNumber={team.phone_number}
