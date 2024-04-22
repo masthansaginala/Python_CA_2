@@ -6,17 +6,18 @@ from .serializer import BikeSerializer
 # Create your views here.
 #This Api is for Listing Bikes.
 class BikeList(APIView):
-    def get(self,request):
-        data = Bikes.objects.all()
-        serializer = BikeSerializer(data, many = True)
+    def get(self, request):
+        bikes = Bikes.objects.all()
+        serializer = BikeSerializer(bikes, many=True, context={'request': request})
         return Response(serializer.data)
 class BikeDetail(APIView):
-    def get(self,request, pk):
+    def get(self, request, pk):
         try:
-            data = Bikes.objects.get(pk = pk)
+            bike = Bikes.objects.get(pk=pk)
         except Bikes.DoesNotExist:
-            return Response(status=404)
-        serializer = BikeSerializer(data)
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        
+        serializer = BikeSerializer(bike, context={'request': request})
         return Response(serializer.data)
     
 
@@ -33,7 +34,7 @@ class BikeSearch(APIView):
     def get(self, request):
         search_param = request.query_params.get('search', '')
         bikes = Bikes.objects.filter(bike_name__icontains=search_param)
-        serializer = BikeSerializer(bikes, many=True)
+        serializer = BikeSerializer(bikes, many=True, context={'request': request})
         return Response(serializer.data)
 
 
